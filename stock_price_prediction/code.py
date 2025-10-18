@@ -53,7 +53,7 @@ plt.legend()
 plt.show()
 
 # %%
-# XGBoost Regressor model
+# XGBoost Regressor model (not ideal since my dataset only has 1 year of data)
 model_xgb = sk.ensemble.GradientBoostingRegressor(n_estimators=100, random_state=42)
 model_xgb.fit(X_train, y_train)
 # %%
